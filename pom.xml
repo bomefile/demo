@@ -12,6 +12,7 @@
     <modules>
         <module>demo-gateway</module>
         <module>demo-mybatis</module>
+        <module>demo-commons</module>
     </modules>
 
     <parent>
