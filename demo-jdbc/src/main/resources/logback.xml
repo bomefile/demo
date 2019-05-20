@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>[%date] [%level] [%thread] [%X{PFTID}] [%logger{36}]:%line - %msg%n</pattern>
+        </encoder>
+    </appender>
+    
+    <appender name="rollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>/export/Logs/pp-inspect-biz.jd.local/pp-inspect-biz.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+           <fileNamePattern>/export/Logs/pp-inspect-biz.jd.local/pp-inspect-biz.%d{yyyy-MM-dd}.log</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>[%date] [%level] [%thread] [%X{PFTID}] [%logger{36}]:%line - %msg%n</pattern>
+        </encoder>
+    </appender>
+    
+    <logger name="com.paipai.inspect" level="INFO" />
+    <logger name="com.jd.std.ucc" level="WARN" />
+    <logger name="com.jd.jsf" level="WARN" />
+    <logger name="com.jd.paipai.commons.jdcolor" level="DEBUG" />
+    
+    <!-- log4jdbc -->
+    <logger name="jdbc.sqltiming" level="INFO"/>
+    <logger name="jdbc.sqlonly" level="OFF"/>
+    <logger name="jdbc.resultset" level="OFF"/>
+    <logger name="jdbc.audit" level="OFF"/>
+    <logger name="jdbc.resultsettable" level="OFF"/>
+    <logger name="jdbc.connection" level="OFF" />
+
+    <root level="info">
+        <appender-ref ref="console" />
+        <appender-ref ref="rollingFile" />
+    </root>
+
+</configuration>
