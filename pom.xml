@@ -28,6 +28,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <project.version>1.0-SNAPSHOT</project.version>
         <lombok.version>1.16.18</lombok.version>
         <commons-lang3.version>3.7</commons-lang3.version>
         <commons-text.version>1.2</commons-text.version>
