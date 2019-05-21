@@ -1,0 +1,17 @@
+---
+spring:
+  profiles:
+    active: dev
+name: 111-dev
+
+---
+
+spring:
+  profiles: test
+name: 111-test
+
+---
+
+spring:
+  profiles: pro
+name: 222-test
