@@ -21,6 +21,6 @@ package com.test.service;
  */
 public interface MessageService {
 
-	String getMessage();
+    String getMessage();
 
 }

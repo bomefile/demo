@@ -21,15 +21,15 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 @Component
-@Profile({ "test" })
+@Profile({"test"})
 public class HelloWorldService implements MessageService {
 
-	@Value("${name:World}")
-	private String name;
+    @Value("${name:World}")
+    private String name;
 
-	@Override
-	public String getMessage() {
-		return "Hello " + this.name;
-	}
+    @Override
+    public String getMessage() {
+        return "Hello " + this.name;
+    }
 
 }
