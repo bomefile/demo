@@ -13,6 +13,7 @@
         <module>demo-gateway</module>
         <module>demo-mybatis</module>
         <module>demo-commons</module>
+        <module>demo-profile</module>
     </modules>
 
     <parent>
