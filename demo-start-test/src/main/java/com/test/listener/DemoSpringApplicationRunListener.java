@@ -15,10 +15,6 @@ import org.springframework.core.env.ConfigurableEnvironment;
 public class DemoSpringApplicationRunListener implements SpringApplicationRunListener, Ordered {
 
 
-
-    @Value("${spring.application.name}")
-    private String serverName;
-
     private final SpringApplication application;
 
     private final String[] args;
