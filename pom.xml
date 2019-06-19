@@ -19,6 +19,9 @@
         <module>demo-profile2</module>
         <module>demo-hello</module>
         <module>demo-first-boot</module>
+        <module>demo-enable3</module>
+        <module>demo-kafka</module>
+        <module>demo-springboot-autoConfig</module>
     </modules>
 
     <parent>

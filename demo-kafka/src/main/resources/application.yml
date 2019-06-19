@@ -1,0 +1,30 @@
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  kafka:
+    topic:
+      group-id: bak-xbk-timeline-group
+      timeline:
+        client: timeline_client_bak_topic
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      transaction-id-prefix: tx.
+    consumer:
+      properties:
+        isolation.level: read_committed
+      bootstrap-servers: localhost:9092
+
+  profiles: dev
+
+
+---
+spring:
+  profiles: test
+
+
+---
+spring:
+  profiles: prod

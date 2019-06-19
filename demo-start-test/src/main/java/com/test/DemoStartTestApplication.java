@@ -17,8 +17,6 @@ public class DemoStartTestApplication {
         DemoApplicationContextInitializer demoApplicationContextInitializer = new DemoApplicationContextInitializer();
         springApplication.addInitializers(demoApplicationContextInitializer);
 
-
-
         springApplication.run(DemoStartTestApplication.class, args);
     }
 
